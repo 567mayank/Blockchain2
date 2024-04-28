@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './Component/Navbar';
 import Secondpart from './Component/Secondpart';
 import Thirdpart from './Component/Thirdpart';
 import Fourthpart from './Component/Fourthpart';
 import Fifthpart from './Component/Fifthpart';
+import Cart from './Component/Cart';
 function App() {
   return (
     <>
@@ -13,7 +13,8 @@ function App() {
     <Thirdpart/>
     <Fourthpart/>
     <Fifthpart/>
-    <Fifthpart/>
+    {/* <Cart/> */}
+    
     </>
   );
 }

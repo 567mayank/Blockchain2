@@ -81,8 +81,8 @@ const Fourthpart = () => {
         }
     }
     return (
-        <div className='flex justify-center mt-[100px] text-[#a347d5] items-center'>
-        <div className='  w-4/5 h-[600px] bg-[#9999ef21] rounded-lg flex flex-row  px-24 py-10 '>
+        <div className='flex justify-center mt-[170px] text-[#a347d5] items-center'>
+        <div className='  w-4/5 h-[600px] bg-[#e599ef21] rounded-lg flex flex-row  px-24 py-10 '>
             
             <div className='flex flex-col justify-evenly gap-y-4 w-1/2'>
                 <div className='rounded-[5px] w-1/5 bg-[#e37afd29] text-center py-2 font-medium'>Exchange</div>

@@ -81,7 +81,7 @@ const Fifthpart = () => {
     }
     return (
     <div className='flex justify-center mt-[100px] text-[#4747d5] items-center'>
-        <div className='  w-4/5 min-h-[600px] bg-[#9999ef21] rounded-lg flex flex-row  px-24 py-10 '>
+        <div className='  w-4/5 min-h-[600px] bg-[#9191f921] rounded-lg flex flex-row  px-24 py-10 '>
             
             <div className=' pl-4 w-[500px]'>
                 {setImage()}

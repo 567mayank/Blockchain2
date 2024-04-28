@@ -4,7 +4,7 @@ const SecondPart = () => {
   return (
 
     <div className='bg-[url(https://c4.wallpaperflare.com/wallpaper/687/185/231/blue-purple-color-blur-wallpaper-thumb.jpg)] 
-        h-[600px] w-full bg-cover flex justify-center items-center text-[white] ' >
+        h-[600px] w-full bg-cover flex justify-center items-center text-[white]' >
       
       <div className=' w-3/5 flex flex-col justify-evenly gap-y-5'>
         <h1 className='text-5xl font-[500]'> Be early to the future of finance </h1>
