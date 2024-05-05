@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import ThirdCom from './ThirdCom';
 import axios from 'axios';
 
-function Thirdpart() {
+
+function Thirdpart({darkMode}) {
   const [value, setValue] = useState([]);
 
   useEffect(() => {
@@ -26,6 +27,7 @@ function Thirdpart() {
             symbol={coin.symbol}
             price={coin.priceUsd}
             change={coin.changePercent24Hr}
+            darkMode={darkMode}
           />
         ))}
       </div>

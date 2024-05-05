@@ -85,14 +85,14 @@ const Fourthpart = () => {
         <div className='  w-4/5 h-[600px] bg-[#e599ef21] rounded-lg flex flex-row  px-24 py-10 '>
             
             <div className='flex flex-col justify-evenly gap-y-4 w-1/2'>
-                <div className='rounded-[5px] w-1/5 bg-[#e37afd29] text-center py-2 font-medium'>Exchange</div>
+                <div className='rounded-[5px] w-1/5 bg-[#e37afd29] text-center py-2 font-medium'>Wallet</div>
                 <h1 className=' text-4xl font-semibold'>Lightning-fast crypto trading</h1>
                 <div onClick={()=>setValue(0)} className=' cursor-pointer'>{msg1()}</div>
                 <div onClick={()=>setValue(1)} className=' cursor-pointer'>{msg2()}</div>
                 <div onClick={()=>setValue(2)} className=' cursor-pointer'>{msg3()}</div>
                 <div onClick={()=>setValue(3)} className=' cursor-pointer'>{msg4()}</div>
                 <button className='rounded-[5px] p-[10px] bg-[#c542f8] text-[white] w-2/6'>
-                    Trade Now
+                    Get Started
                 </button>
             </div>
 
