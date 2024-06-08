@@ -1,8 +1,5 @@
 import React from 'react';
-import { Link,NavLink } from 'react-router-dom';
-import Cart from './Cart';
-import { BrowserRouter,Route,Routes } from 'react-router-dom';
-import App from '../App'
+import { Link} from 'react-router-dom';
 
 const ThirdCom = ({ name, symbol, price, change, darkMode }) => {
   const imgUrl = `https://assets.coincap.io/assets/icons/${symbol.toLowerCase()}@2x.png`;
@@ -27,8 +24,8 @@ const ThirdCom = ({ name, symbol, price, change, darkMode }) => {
         style={{ backgroundColor: styles.backgroundColor, color: styles.boxtxt }}>
       <div className=' flex flex-row items-center gap-x-6'>
         <img className=" h-12" src={imgUrl} alt="image"></img>
-        <Link to="/cart" className='border-[2px] border-solid border-[#8262ba] p-0.5 bg-[#8e62ba7e] px-3 rounded-md'>Buy</Link>
-        <a href="cart" className=' border-[2px] border-[solid] border-[#71ba62] p-0.5 bg-[#62ba747e] px-4 rounded-md'>Sell</a>
+        <Link to="cart" className='border-[2px] border-solid border-[#8262ba] p-0.5 bg-[#8e62ba7e] px-3 rounded-md'>Buy</Link>
+        <Link to="cart" className=' border-[2px] border-[solid] border-[#71ba62] p-0.5 bg-[#62ba747e] px-4 rounded-md'>Sell</Link>
       </div>
       <div className=' flex flex-row text-xl gap-x-3'>
         <div>{name}</div>

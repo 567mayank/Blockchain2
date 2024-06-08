@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 const Navbar = ({darkMode}) => {
   const modeStyles = {
     light: {
@@ -16,7 +17,7 @@ const Navbar = ({darkMode}) => {
 <div className=" fixed w-full grid z-50 grid-cols-[0.65fr_0.35fr] justify-items-center  items-center  text-white text-xl px-40 py-4 border-b-2 border-solid border-white" style={{ backgroundColor: styles.backgroundColor}}>
       
     <div className="grid grid-cols-[repeat(5,minmax(0,1fr))]  items-center">
-        <a href="#" className="text-center pb-2"><span className='text-3xl'>Blockchain</span>.com</a>
+        <Link to="/" className="text-center pb-2"><span className='text-3xl'>Blockchain</span>.com</Link>
         <a href="#" className="text-center">Wallet</a>
         <a href="#" className="text-center">Exchange</a>
         <a href="#" className="text-center">Explorer</a>
