@@ -1,16 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Navbar from './Component/Navbar'
 import { Outlet } from 'react-router-dom'
 import Togglebuttton from './Component/Togglebuttton'
-import { useState } from 'react'
+import UserContextProvider from './Context/UserContextProvider'
+import UserContext from './Context/UserContext'
 function Layout() {
-  const [darkMode, setDarkMode] = useState(false);
+  // const [darkMode, setDarkMode] = useState(false);
+  // const {darkMode,setDarkMode}=useContext(UserContext);
   return (
-    <>
-        <Navbar darkMode={darkMode}/>
+    <UserContextProvider>
+        <Navbar/>
         <Outlet />
-        <Togglebuttton darkMode={darkMode} setDarkMode={setDarkMode}/>
-    </>
+        <Togglebuttton/>
+    </UserContextProvider>
   )
 }
 

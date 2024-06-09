@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom';
-const Navbar = ({darkMode}) => {
+import UserContext from '../Context/UserContext';
+const Navbar = () => {
+  const {darkMode} = useContext(UserContext)
   const modeStyles = {
     light: {
       backgroundColor: '#4949ec',

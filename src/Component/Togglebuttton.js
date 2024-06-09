@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import UserContext from '../Context/UserContext';
 
-const Togglebuttton = ({ darkMode, setDarkMode }) => {
+const Togglebuttton = () => {
+  const {darkMode,setDarkMode}=useContext(UserContext)
   return (
     <div className='fixed bottom-5 left-[1440px] cursor-pointer'>
       {darkMode ? 

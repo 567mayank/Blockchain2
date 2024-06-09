@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route, createBrowserRouter } from 'react-router-dom';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import Navbar from './Component/Navbar';
 import Secondpart from './Component/Secondpart';
 import Thirdpart from './Component/Thirdpart';
@@ -11,8 +11,10 @@ import Eighthpart from './Component/Eighthpart';
 import Ninthpart from './Component/Ninthpart';
 import Togglebuttton from './Component/Togglebuttton';
 import Cart from './Component/Cart';
+import UserContext from './Context/UserContext';
 
-function App({darkMode}) {
+function App() {
+  const {darkMode}=useContext(UserContext);
   return (
     <>
       <Secondpart darkMode={darkMode}/>
